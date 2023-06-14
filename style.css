@@ -28,7 +28,8 @@ nav{
 }
 
 .wrapper-main{
-  width: 1000px;
+  padding: 0;
+  width: 500px;
   margin:0  auto;
   margin-bottom: 0;
 
@@ -155,17 +156,18 @@ footer{
   float: right;
   line-height: 80px;
   margin-right: 40px;
+  display: block;
 }
 #check{
   display: none;
 }
 
 
-@media screen and (max-width: 952px) 
+@media screen and (max-width: 400px) 
  {
 
   .wrapper-main{
-    padding: 0%;
+     padding: 0%;
      margin: 0;
      width: 50%;
      margin-bottom: 0;
@@ -193,11 +195,11 @@ nav li{
 
 ul{
   position: fixed;
-  width: 100%;
+  width: 70%;
   height: 100vh;
-  background: #2c3e5e;
-  top: 30px;
-  right: -100%;
+  background: black;
+  top: 17px;
+  right: -150%;
   text-align: center;
   transition: all .5s;
 }
@@ -219,6 +221,12 @@ nav ul li a{
   cursor: pointer;
   display: block;
 }
+#check{
+  display: none;
+}
+
+
+
 
 #check:checked ~ ul{
   right: 0;
