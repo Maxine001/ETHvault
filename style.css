@@ -1,4 +1,7 @@
-*
+* {
+  padding: 0%;
+  margin: 0%;
+}
 
 h1{
   color: #fff;
@@ -22,15 +25,15 @@ h4{
 
 nav{
   float: right;
-  margin-top: none;
+  
   
   
 }
 
-.wrapper-main{
+.wrapper{
   padding: 0;
   width: 500px;
-  margin:0  auto;
+  margin-right:0 ;
   margin-bottom: 0;
 
 }
@@ -41,6 +44,7 @@ strong{
 
 nav li{
   display: inline-block;
+  margin-top: 10px;
 }
 
 nav li a{
@@ -143,12 +147,7 @@ footer{
   margin-top: 0px;
 }
 
-.fa-solid{
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: block;
-}
+
 
 .checkbtn{
   font-size: 30px;
@@ -156,14 +155,15 @@ footer{
   float: right;
   line-height: 80px;
   margin-right: 40px;
-  display: block;
+  display: none;
+  cursor: pointer;
 }
 #check{
   display: none;
 }
 
 
-@media screen and (max-width: 400px) 
+@media screen and (max-width: 600px) 
  {
 
   .wrapper-main{
@@ -176,14 +176,11 @@ footer{
  nav{
   float: right;
   margin-top: none;
+  
 
  }
   
-nav li{
-  display: inline-block;
-  
 
- } 
 
  nav li a{
   color: #fff;
@@ -198,7 +195,7 @@ ul{
   width: 70%;
   height: 100vh;
   background: black;
-  top: 17px;
+  top: 50px;
   right: -150%;
   text-align: center;
   transition: all .5s;
@@ -214,20 +211,20 @@ nav ul li{
 nav ul li a{
   font-size: 20px;
 }
-
-.fa-solid{
+.checkbtn{
+  position: relative;
+  font-size: 30px;
   color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
   display: block;
+  cursor: pointer;
 }
+
 #check{
   display: none;
 }
-
-
-
-
 #check:checked ~ ul{
   right: 0;
 }
@@ -279,6 +276,123 @@ section{
     padding-left: 30px;
     color: #fff;
   }
+}
+ 
+@media screen and (max-width: 450px) 
+{
+  .wrapper-main{
+    padding: 0%;
+    margin: 0;
+    width: 50%;
+    margin-bottom: 0;
+}
+
+nav{
+ float: right;
+ margin-top: none;
+ 
+
+}
+ 
+
+
+nav li a{
+ color: #fff;
+ text-decoration: none;
+ font-size: 10px;
+ margin: 0;
+
+}
+
+
+ul{
+ position: fixed;
+ width: 70%;
+ height: 100vh;
+ background: black;
+ top: 50px;
+ right: -100%;
+ text-align: center;
+ transition: all .5s;
+}
+
+nav ul li{
+ display: block;
+ margin: 50px 0;
+ line-height: 30px;
+
+}
+
+nav ul li a{
+ font-size: 20px;
+}
+.checkbtn{
+ position: relative;
+ font-size: 30px;
+ color: #fff;
+ float: right;
+ line-height: 80px;
+ margin-right: 40px;
+ display: block;
+ cursor: pointer;
+}
+
+#check{
+ display: none;
+}
+#check:checked ~ ul{
+ right: 0;
+}
+
+section{
+ background: url(vault.JPG) no-repeat;
+ background-size: cover;
+ height: calc(100vh - 80px);
+}
+ 
+
+ 
+
+
+ h1{
+   color: #fff;
+   font-size: 30px;
+   text-shadow: 50px;
+   font-style: Bold;
+   margin-left: 50px;
+   border: 10px;
+   background: black;
+ }
+ h4{
+   color: #fff;
+   font-size: small;
+   margin-left: 20px;
+ }
+
+ h2{
+   font-size: 30px;
+   color: #fff;
+   padding-left: 10px;
+ }
+
+ footer{
+   background: black;
+   margin-top: 0px;
+ }
+ h5{
+   text-align: left;
+   font-size: 20px;
+   color: white;
+   width: 430px;
+   text-emphasis-position: 30px;
+   padding-left: 20px;
+ }
+ h3{
+   padding-left: 30px;
+   color: #fff;
+
+  }
+
 }
 
 
