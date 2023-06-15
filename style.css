@@ -326,6 +326,7 @@ nav ul li{
 nav ul li a{
  font-size: 20px;
 }
+
 .checkbtn{
  position: relative;
  font-size: 30px;
@@ -383,7 +384,7 @@ section{
    text-align: left;
    font-size: 20px;
    color: white;
-   width: 430px;
+   width: 450px;
    text-emphasis-position: 30px;
    padding-left: 20px;
  }
